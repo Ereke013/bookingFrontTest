@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kazakhstan Express</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Hotel Almaty</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="https://www.instagram.com/anefiyayeva/?next=%2F">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hotel-details">
+    <h1>Kazakhstan Express</h1>
+    <img src="3hotel.jpg" alt="Hotel 3" width="500"><br>
+    <img src="3001.jpg" alt="Hotel 3" width="300">
+    <img src="3002.jpg" alt="Hotel 2" width="300">
+    <img src="3003.jpg" alt="Hotel 2" width="300"> <br>
+    <img src="3004.jpg" alt="Hotel 2" width="300">
+    <img src="3005.jpg" alt="Hotel 2" width="300">
+    <img src="3006.jpg" alt="Hotel 2" width="300"><br> <br>
+    <p>Kazakhstan Express is a hotel in Almaty, 300 metres from attractions such as Palace of the Republic. Amenities include a terrace, a restaurant, a bar and free private parking. The 3-star hotel offers views of the city. Guests can make use of a sauna and a hammam. Guests have access to a 24-hour front desk, an airport shuttle or food and beverage delivery service, and free Wi-Fi access throughout.
+<br>
+        The air-conditioned rooms at Kazakhstan Express feature a safe and a TV. Other amenities include a desk, a kettle and a private bathroom with a shower. The private bathroom includes a bathtub, free toiletries and a hairdryer. Kazakhstan Express provides guests with bed linen and towels.
+        <br>
+        Kazakhstan Express offers a buffet or continental breakfast.
+        <br>
+        Guests can make use of a hairdressing salon and a business area.
+        <br>
+        Popular attractions near Kazakhstan Express include the 28 Panfilov Guardsmen Park, the Voznesensky Cathedral and the Kazakhstan Independence Monument. Almaty International Airport is 15 kilometres away.
+        <br>
+        Couples particularly like the location - they rated the accommodation in this area for travelling as a couple at 9.5.</p><br>
+        <br>
+    <p><b>Facilities: Free Wi-Fi, Swimming Pool, Gym, Very good breakfast, Spa & Wellness Centre</b></p> <br>
+    <h2>Room Types:</h2>
+    <ul>
+        <li>Standard Room - $70 per night</li>
+        <li>Deluxe Room - $110 per night</li>
+        <li>Executive Suite - $200 per night</li>
+    </ul>
+  </section>
+  <h2>Make a Reservation</h2>
+    <form action="reservation_process.php" method="post">
+      <label for="room_type">Room Type:</label>
+      <select id="room_type" name="room_type">
+        <option value="Single Room">Single Room</option>
+        <option value="Double Room">Double Room</option>
+        <option value="Suite">Suite</option>
+      </select>
+      <label for="checkin">Check-in Date:</label>
+      <input type="date" id="checkin" name="checkin">
+      <label for="checkout">Check-out Date:</label>
+      <input type="date" id="checkout" name="checkout">
+      <label for="guests">Number of Guests:</label>
+      <input type="number" id="guests" name="guests" min="1">
+      <button type="submit" class="btn">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <div class="contact-info">
+      <p>123 Main Street, Almaty, Kazakhstan</p>
+      <p>Phone: +77754006878</p>
+      <p>Email: info@hotelalmaty.com</p>
+    </div>
+    <div class="social-links">
+      <!-- Add social media links here -->
+    </div>
+  </footer>
+</body>
+</html>

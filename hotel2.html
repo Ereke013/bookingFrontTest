@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Royal Tulip</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Hotel Almaty</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="https://www.instagram.com/anefiyayeva/?next=%2F">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hotel-details">
+    <h1>Royal Tulip</h1>
+    <img src="2hotel.jpg" alt="Hotel 2" width="500"><br>
+    <img src="2001.jpg" alt="Hotel 2" width="300">
+    <img src="2002.jpg" alt="Hotel 2" width="300">
+    <img src="2003.jpg" alt="Hotel 2" width="300"> <br>
+    <img src="2004.jpg" alt="Hotel 2" width="300">
+    <img src="2005.jpg" alt="Hotel 2" width="300">
+    <img src="2006.jpg" alt="Hotel 2" width="300"><br> <br>
+    <p>Feel like a celebrity with the excellent service at Royal Tulip Almaty Hotel <br>
+        This elegant 5-star hotel is located on the large Dostyk Avenue in southern Almaty. It offers international cuisine, a large spa and a beautiful indoor pool.
+        <br>
+        The spacious rooms at the Royal Tulip Almaty feature large windows and high-quality furnishings. Room amenities also include flat-screen TVs, hot drinks facilities and bathrobes.
+        <br>
+        Guests can relax in the private billiards room or in one of the lounge bars. The hotel has a dance hall and conference facilities.
+        <br>
+        Free parking is available at Royal Tulip Almaty. Almaty city centre is a 10-minute drive from the hotel, while the city's financial district is a 5-minute drive away.
+        <br>
+        The magnificent Tien Shan Mountains are also nearby. Royal Tulip Hotel is a 15-minute drive from the Medeo high-altitude ice rink and a 30-minute drive from the Chimbulak Ski Resort.
+        <br>
+        Couples particularly like the location - they rated the accommodation in the area for a trip for two at 9.3.</p><br>
+        <br>
+    <p><b>Facilities: Free Wi-Fi, Swimming Pool, Gym, Very good breakfast, Spa & Wellness Centre</b></p> <br>
+    <h2>Room Types:</h2>
+    <ul>
+        <li>Standard Room - $80 per night</li>
+        <li>Deluxe Room - $120 per night</li>
+        <li>Executive Suite - $200 per night</li>
+    </ul>
+  </section>
+  <h2>Make a Reservation</h2>
+    <form action="reservation_process.php" method="post">
+      <label for="room_type">Room Type:</label>
+      <select id="room_type" name="room_type">
+        <option value="Single Room">Single Room</option>
+        <option value="Double Room">Double Room</option>
+        <option value="Suite">Suite</option>
+      </select>
+      <label for="checkin">Check-in Date:</label>
+      <input type="date" id="checkin" name="checkin">
+      <label for="checkout">Check-out Date:</label>
+      <input type="date" id="checkout" name="checkout">
+      <label for="guests">Number of Guests:</label>
+      <input type="number" id="guests" name="guests" min="1">
+      <button type="submit" class="btn">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <div class="contact-info">
+      <p>123 Main Street, Almaty, Kazakhstan</p>
+      <p>Phone: +77754006878</p>
+      <p>Email: info@hotelalmaty.com</p>
+    </div>
+    <div class="social-links">
+      <!-- Add social media links here -->
+    </div>
+  </footer>
+</body>
+</html>

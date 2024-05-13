@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rixos Almaty</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Hotel Almaty</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="https://www.instagram.com/anefiyayeva/?next=%2F">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hotel-details">
+    <h1>Rixos Almaty Отель</h1>
+    <img src="1hotel.jpg" alt="Hotel 1" width="500"><br>
+    <img src="1001.jpg" alt="Hotel 1" width="300">
+    <img src="1002.jpg" alt="Hotel 1" width="300">
+    <img src="1003.jpg" alt="Hotel 1" width="300"> <br>
+    <img src="1004.jpg" alt="Hotel 1" width="300">
+    <img src="1005.jpg" alt="Hotel 1" width="300">
+    <img src="1006.jpg" alt="Hotel 1" width="300">
+    <p>Feel like a celebrity with great service at Rixos Almaty Hotel <br>
+        This luxurious 5-star hotel is located in Almaty city centre, 1 km from Nikolsky Cathedral. The Rixos Almaty Hotel offers modern rooms with free WiFi and a spa with a swimming pool.
+        <br>
+        All air-conditioned rooms at Rixos Almaty have a work desk and a balcony with great views. The bathroom is fitted with a bathtub and shower.
+        <br>
+        A buffet breakfast is served every morning at Rixos Almaty. The restaurant serves international à la carte dishes and a buffet. The lobby bar and lounge are open 24 hours a day. There is also a Brasserie restaurant.
+        <br>
+        The 2,200-square-metre spa features a gym, sauna, Turkish bath, indoor garden and 7 massage rooms.
+        <br>
+        Rixos Hotel is 2 km from Almaty Opera House and a 5 km cable car ride from Koktobe Mountain.
+        <br>
+        Couples particularly like the location - they rated the accommodation in the area for a trip for two at 8.7.
+        <br></p><br>
+        <br>
+    <p><b>Facilities: Free Wi-Fi, Swimming Pool, Gym, Very good breakfast, 2 restaurants</b></p> <br>
+    <h2>Room Types:</h2>
+    <ul>
+      <li>Single Room - $100 per night</li>
+      <li>Double Room - $150 per night</li>
+      <li>Suite - $250 per night</li>
+    </ul>
+  </section>
+  <h2>Make a Reservation</h2>
+    <form action="reservation_process.php" method="post">
+      <label for="room_type">Room Type:</label>
+      <select id="room_type" name="room_type">
+        <option value="Single Room">Single Room</option>
+        <option value="Double Room">Double Room</option>
+        <option value="Suite">Suite</option>
+      </select>
+      <label for="checkin">Check-in Date:</label>
+      <input type="date" id="checkin" name="checkin">
+      <label for="checkout">Check-out Date:</label>
+      <input type="date" id="checkout" name="checkout">
+      <label for="guests">Number of Guests:</label>
+      <input type="number" id="guests" name="guests" min="1">
+      <button type="submit" class="btn">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <div class="contact-info">
+      <p>123 Main Street, Almaty, Kazakhstan</p>
+      <p>Phone: +77754006878</p>
+      <p>Email: info@hotelalmaty.com</p>
+    </div>
+    <div class="social-links">
+      <!-- Add social media links here -->
+    </div>
+  </footer>
+</body>
+</html>

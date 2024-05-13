@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ibis Almaty</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Hotel Almaty</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="https://www.instagram.com/anefiyayeva/?next=%2F">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hotel-details">
+    <h1>ibis Almaty Jetisu</h1>
+    <img src="4001.jpg" alt="Hotel 3" width="500"><br>
+    <img src="4001.jpg" alt="Hotel 3" width="300">
+    <img src="4002.jpg" alt="Hotel 2" width="300">
+    <img src="4003.jpg" alt="Hotel 2" width="300"> <br>
+    <img src="4004.jpg" alt="Hotel 2" width="300">
+    <img src="4005.jpg" alt="Hotel 2" width="300">
+    <img src="4006.jpg" alt="Hotel 2" width="300"><br> <br>
+    <p>Ibis Almaty Jetisu Hotel is located in the cultural centre of Almaty and is notable for its convenient location, comfortable rooms, wide range of services and reasonable prices.
+<br>
+        The affordable ibis Almaty Jetisu is part of the first Accor combo hotel in Kazakhstan.
+        <br>
+        The hotel is located in the same building as another Accor hotel, shops and restaurants.
+        <br>
+        The large, beautiful lobby, decorated with works of art, attracts attention and serves as a centre for socialising.
+        <br>
+        Comfortable rooms with innovative Sweet Bed by ibis beds, a fitness centre, sauna and a conference room for up to 24 people provide everything you need to relax or work efficiently.
+        <br>
+        Couples especially like the location - they rated the accommodation in the area for travelling as a couple a 9.4.</p><br>
+        <br>
+    <p><b>Facilities: Free Wi-Fi, Swimming Pool, Gym, Very good breakfast, Spa & Wellness Centre</b></p> <br>
+    <h2>Room Types:</h2>
+    <ul>
+        <li>Standard Room - $70 per night</li>
+        <li>Deluxe Room - $110 per night</li>
+        <li>Executive Suite - $200 per night</li>
+    </ul>
+  </section>
+  <h2>Make a Reservation</h2>
+    <form action="reservation_process.php" method="post">
+      <label for="room_type">Room Type:</label>
+      <select id="room_type" name="room_type">
+        <option value="Single Room">Single Room</option>
+        <option value="Double Room">Double Room</option>
+        <option value="Suite">Suite</option>
+      </select>
+      <label for="checkin">Check-in Date:</label>
+      <input type="date" id="checkin" name="checkin">
+      <label for="checkout">Check-out Date:</label>
+      <input type="date" id="checkout" name="checkout">
+      <label for="guests">Number of Guests:</label>
+      <input type="number" id="guests" name="guests" min="1">
+      <button type="submit" class="btn">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <div class="contact-info">
+      <p>123 Main Street, Almaty, Kazakhstan</p>
+      <p>Phone: +77754006878</p>
+      <p>Email: info@hotelalmaty.com</p>
+    </div>
+    <div class="social-links">
+      <!-- Add social media links here -->
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keremet Hote</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Hotel Almaty</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="https://www.instagram.com/anefiyayeva/?next=%2F">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hotel-details">
+    <h1>Keremet Hotel</h1>
+    
+    <img src="5hotel.jpg" alt="Hotel 3" width="500"><br>
+    <img src="5001.jpg" alt="Hotel 3" width="300">
+    <img src="5002.jpg" alt="Hotel 2" width="300">
+    <img src="5003.jpg" alt="Hotel 2" width="300"> <br>
+    <img src="5004.jpg" alt="Hotel 2" width="300">
+    <img src="5005.jpg" alt="Hotel 2" width="300">
+    <img src="5006.jpg" alt="Hotel 2" width="300"><br> <br>
+    <p>Keremet Hotel is a hotel in Almaty, 1.5 km from attractions such as Central State Museum of the Republic of Kazakhstan. Offering city views, it features a garden. Facilities at this 3-star hotel include food and beverage delivery, a 24-hour front desk and free Wi-Fi. Drinks are available at the snack bar.
+     <br>
+        The air-conditioned rooms at Keremet Hotel feature a safe and a flat-screen TV. Other amenities include a desk, kettle and minibar, as well as a private bathroom with a shower. Keremet Hotel provides guests with bed linen and towels.
+        <br>
+        Keremet Hotel is located 1.7 km and 2.2 km respectively from attractions such as Palace of the Republic and Kazakhstan Independence Monument. Almaty International Airport is 15 kilometres away.
+        <br>
+        Couples particularly like the location - they rated the accommodation in the area for a couple's trip at 9.1.</p><br>
+        <br>
+    <p><b>Facilities: Free Wi-Fi, Swimming Pool, Gym, Very good breakfast, Spa & Wellness Centre</b></p> <br>
+    <h2>Room Types:</h2>
+    <ul>
+        <li>Standard Room - $70 per night</li>
+        <li>Deluxe Room - $110 per night</li>
+        <li>Executive Suite - $200 per night</li>
+    </ul>
+  </section>
+  <h2>Make a Reservation</h2>
+    <form action="reservation_process.php" method="post">
+      <label for="room_type">Room Type:</label>
+      <select id="room_type" name="room_type">
+        <option value="Single Room">Single Room</option>
+        <option value="Double Room">Double Room</option>
+        <option value="Suite">Suite</option>
+      </select>
+      <label for="checkin">Check-in Date:</label>
+      <input type="date" id="checkin" name="checkin"><br>
+      <label for="checkout">Check-out Date:</label><br>
+      <input type="date" id="checkout" name="checkout"><br>
+      <label for="guests">Number of Guests:</label><br>
+      <input type="number" id="guests" name="guests" min="1"><br>
+      <button type="submit" class="btn">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <div class="contact-info">
+      <p>123 Main Street, Almaty, Kazakhstan</p>
+      <p>Phone: +77754006878</p>
+      <p>Email: info@hotelalmaty.com</p>
+    </div>
+    <div class="social-links">
+      <!-- Add social media links here -->
+    </div>
+  </footer>
+</body>
+</html>
