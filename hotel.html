@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Almaty</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+</head>
+<script>
+  function openFullscreen(src) {
+    document.getElementById('fullscreen-img').src = src;
+    document.querySelector('.fullscreen-image').style.display = 'flex';
+    submitData()
+  }
+
+  function closeFullscreen() {
+    document.querySelector('.fullscreen-image').style.display = 'none';
+  }
+</script>
+<script>
+  getHotelById()
+</script>
+
+<body>
+  <header>
+    <div class="logo">Hotel Almaty</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="https://www.instagram.com/anefiyayeva/?next=%2F">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="hotel-details">
+    <div class="hotel-name">
+      <h1 id="hotel-name">Rixos Almaty Отель</h1>
+      <a href="#reservation" class="btn">+ Reserve now</a>
+    </div>
+    <div class="image-table">
+      <div class="image-table-row">
+        <div class="image-table-cell">
+          <img src="images/hotels/1hotel.jpg" alt="Big Image" class="big-image" onclick="openFullscreen(this.src)">
+        </div>
+        <div class="image-table-cell">
+          <img src="images/hotels/1001.jpg" alt="Small Image 1" class="small-image-vertical" onclick="openFullscreen(this.src)"><br>
+          <img src="images/hotels/1002.jpg" alt="Small Image 2" class="small-image-vertical" onclick="openFullscreen(this.src)"><br>
+          <img src="images/hotels/1003.jpg" alt="Small Image 3" class="small-image-vertical" onclick="openFullscreen(this.src)">
+        </div>
+      </div>
+      <div class="image-table-row">
+        <div class="image-table-cell">
+          <img src="images/hotels/1004.jpg" alt="Small Image 4" class="small-image-horizontal" onclick="openFullscreen(this.src)">
+        </div>
+        <div class="image-table-cell">
+          <img src="images/hotels/1005.jpg" alt="Small Image 5" class="small-image-horizontal" onclick="openFullscreen(this.src)">
+        </div>
+        <div class="image-table-cell">
+          <img src="images/hotels/1006.jpg" alt="Small Image 6" class="small-image-horizontal" onclick="openFullscreen(this.src)">
+        </div>
+      </div>
+    </div>
+    <div class="fullscreen-image" onclick="closeFullscreen()">
+      <img id="fullscreen-img" src="" alt="Fullscreen Image">
+    </div>
+    <p id="hotel-description">Description</p>
+    <br>
+    <br>
+    <h2>Facilities:</h2>
+    <div class="facilities">
+      <table>
+        <tr>
+          <td>
+            <div class="facility-container">
+              <img src="images/icons/wifi.png">
+              <span>Free Wi-Fi</span>
+            </div>
+          </td>
+          <td>
+            <div class="facility-container">
+              <img src="images/icons/transfer.png">
+              <span>Transfer from/to airport</span>
+            </div>
+          </td>
+          <td>
+            <div class="facility-container">
+              <img src="images/icons/gym.png">
+              <span>Gym</span>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="facility-container">
+              <img src="images/icons/pool.png">
+              <span>Swimming pool</span>
+            </div>
+          </td>
+          <td>
+            <div class="facility-container">
+              <img src="images/icons/cleaning.png">
+              <span>Everyday room cleaning</span>
+            </div>
+          </td>
+          <td>
+            <div class="facility-container">
+              <img src="images/icons/restaurant.png">
+              <span>2 restaurants</span>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="facility-container">
+              <img src="images/icons/laundry.png">
+              <span>Laundry</span>
+            </div>
+          </td>
+          <td>
+            <div class="facility-container">
+              <img src="images/icons/non-smoking.png">
+              <span>Non-smoking rooms</span>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <br>
+    <h2>Room Types:</h2>
+    <div class="room-types">
+      <table>
+        <tr>
+          <td>Single Room with balcony</td>
+          <td>$100 per night</td>
+        </tr>
+        <tr>
+          <td>Double Room with queen size bed</td>
+          <td>$150 per night</td>
+        </tr>
+        <tr>
+          <td>Suite with kin size bed</td>
+          <td>$250 per night</td>
+        </tr>
+      </table>
+    </div>
+  </section>
+  <section id="reservation">
+    <div class="reservation-block">
+      <h2>Make a Reservation</h2>
+      <table>
+        <tr>
+          <td>
+            <label for="name">Full name</label><br>
+            <input type="text" id="name" name="name" class="rounded-input" placeholder="Enter your full name">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="input-container">
+              <label for="checkin">Check-in Date:</label>
+              <input type="date" id="checkin" class="rounded-input" name="checkin">
+            </div>
+          </td>
+          <td>
+            <div class="input-container">
+              <label for="checkout">Check-out Date:</label>
+              <input type="date" id="checkout" class="rounded-input" name="checkout">
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="input-container">
+              <label for="adults">Adults</label>
+              <select id="adults_option" class="rounded-input" name="adults_option">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+          </td>
+          <td>
+            <div class="input-container">
+              <label for="children">Children</label>
+              <select class="rounded-input" id="children_option" name="children_option">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="input-container">
+              <label for="room_type">Room Type</label>
+              <select id="room_option" class="rounded-input" name="room_option">
+                <option value="Single Room">Single Room</option>
+                <option value="Double Room">Double Room</option>
+                <option value="Suite">Suite</option>
+              </select>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h4 style="margin-top: 20px;">Additional costs:</h4>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="transfer_checkbox">Transfer 100$</label>
+            <input type="checkbox" id="transfer_checkbox" name="transfer_checkbox">
+          </td>
+          <td>
+            <label for="gym_checkbox">Gym 90$</label>
+            <input type="checkbox" id="gym_checkbox" name="gym_checkbox">
+          </td>
+          <td>
+            <label for="laundry_checkbox">Laundry 200$</label>
+            <input type="checkbox" id="laundry_checkbox" name="laundry_checkbox">
+          </td>
+        </tr>
+      </table>
+      <button type="submit" class="btn">Submit</button>
+    </div>
+  </section>
+  <footer>
+    <div class="contact-info">
+      <p>123 Main Street, Almaty, Kazakhstan</p>
+      <p>Phone: +77754006878</p>
+      <p>Email: info@hotelalmaty.com</p>
+    </div>
+  </footer>
+</body>
+</html>
