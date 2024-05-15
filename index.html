@@ -1,54 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Almaty</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hotel Almaty</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js"></script>
-</head>
+  <script>
+    getAllHotels();
+  </script>
 
-<script>
-  getAllHotels()
-</script>
+  <body>
+    <header>
+      <div class="logo">Almaty Hotels</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="booking.html">My Bookings</a></li>
+          <li>
+            <a href="https://www.instagram.com/anefiyayeva/?next=%2F"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-<body>
-  <header>
-    <div class="logo">Almaty Hotels</div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="https://www.instagram.com/anefiyayeva/?next=%2F">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <section class="hero">
+      <h1>Welcome to Almaty</h1>
+      <p>Your perfect stay in the heart of Almaty</p>
+      <a href="#hotels" class="btn">Book Hotel Now</a>
+    </section>
 
-  <section class="hero">
-    <h1>Welcome to Almaty</h1>
-    <p>Your perfect stay in the heart of Almaty</p>
-    <a href="#hotels" class="btn">Book Hotel Now</a>
-  </section>
+    <section id="hotels" class="hotels">
+      <table id="hotels-table">
+        <tr>
+          <h2>Популярные</h2>
+        </tr>
+      </table>
+    </section>
 
-  <section id="hotels" class="hotels">
-    <table id="hotels-table">
-      <tr>
-        <h2>Популярные</h2>
-      </tr>
-    </table>
-  </section>
-
-  <footer>
-    <div class="contact-info">
-      <p>Jandosova 49 , Almaty, Kazakhstan</p>
-      <p>Phone: +77754006878</p>
-      <p>Email: info@hotelalmaty.com</p>
-    </div>
-    <div class="social-links">
-      <a href="https://www.instagram.com/anefiyayeva/?next=%2F"></a>
-    </div>
-    <p>&copy; 2024. Hotel Complex in Almaty</p>
-  </footer>
-</body>
-
+    <footer>
+      <div class="contact-info">
+        <p>Jandosova 49 , Almaty, Kazakhstan</p>
+        <p>Phone: +77754006878</p>
+        <p>Email: info@hotelalmaty.com</p>
+      </div>
+      <div class="social-links">
+        <a href="https://www.instagram.com/anefiyayeva/?next=%2F"></a>
+      </div>
+      <p>&copy; 2024. Hotel Complex in Almaty</p>
+    </footer>
+  </body>
 </html>

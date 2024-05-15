@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">Almaty Hotels</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <a href="https://www.instagram.com/anefiyayeva/?next=%2F"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main id="booking">
+      <!-- <form> -->
+      <form class="booking_form">
+        <div>
+          <label for="input-email">Email</label><br />
+          <input
+            type="email"
+            id="booking-email"
+            name="email"
+            class="rounded-input"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="input-tel">Phone</label><br />
+          <input
+            type="tel"
+            id="booking-tel"
+            name="tel"
+            class="rounded-input"
+            placeholder="Enter your telephone"
+            required
+          />
+        </div>
+        <button class="btn" type="button" onclick="getAllBooking()">
+          Check
+        </button>
+      </form>
+
+      <!-- </form> -->
+      <table id="hotels-table">
+        <tr>
+          <h2>My Bookings</h2>
+        </tr>
+      </table>
+    </main>
+  </body>
+</html>

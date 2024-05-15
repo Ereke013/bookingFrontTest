@@ -32,6 +32,7 @@
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
+          <li><a href="booking.html">My Bookings</a></li>
           <li>
             <a href="https://www.instagram.com/anefiyayeva/?next=%2F"
               >Contact</a
@@ -180,6 +181,7 @@
         </table>
       </div>
     </section>
+    <div id="room_prices_input"></div>
     <section id="reservation">
       <div class="reservation-block">
         <h2>Make a Reservation</h2>
@@ -243,6 +245,18 @@
                 name="email"
                 class="rounded-input"
                 placeholder="Enter your email"
+                required
+              />
+            </td>
+
+            <td>
+              <label for="input-tel">Phone</label><br />
+              <input
+                type="tel"
+                id="input-tel"
+                name="tel"
+                class="rounded-input"
+                placeholder="Enter your telephone"
                 required
               />
             </td>

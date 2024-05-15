@@ -263,3 +263,57 @@ footer {
 .hotel-card {
   margin-bottom: 20px;
 }
+
+#booking {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+#booking form {
+  /* margin-bottom: 30px; */
+  flex-direction: column;
+  display: flex;
+  justify-content: flex-end;
+
+  /* display: grid;
+  place-items: center;
+  height: 100vh; */
+}
+
+#booking .booking_form input {
+  margin-bottom: 20px;
+  /* flex-direction: column;
+  display: flex;
+  justify-content: flex-end; */
+
+  /* display: grid;
+  place-items: center;
+  height: 100vh; */
+}
+#booking .booking_form button {
+  margin-top: 20px;
+  /* flex-direction: column;
+  display: flex;
+  justify-content: flex-end; */
+
+  /* display: grid;
+  place-items: center;
+  height: 100vh; */
+}
+
+#booking table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#booking td,
+#booking th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+/* #booking tr:nth-child(even) {
+  background-color: #dddddd;
+} */
