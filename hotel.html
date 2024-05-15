@@ -11,15 +11,19 @@
   function openFullscreen(src) {
     document.getElementById('fullscreen-img').src = src;
     document.querySelector('.fullscreen-image').style.display = 'flex';
-    submitData()
   }
 
   function closeFullscreen() {
     document.querySelector('.fullscreen-image').style.display = 'none';
   }
+
+  function onButtonSubmitted() {
+    bookRoom()
+  }
 </script>
 <script>
   getHotelById()
+  getRoomsByHotelId()
 </script>
 
 <body>
@@ -128,18 +132,11 @@
     <br>
     <h2>Room Types:</h2>
     <div class="room-types">
-      <table>
+      <table id="room-table">
         <tr>
-          <td>Single Room with balcony</td>
-          <td>$100 per night</td>
-        </tr>
-        <tr>
-          <td>Double Room with queen size bed</td>
-          <td>$150 per night</td>
-        </tr>
-        <tr>
-          <td>Suite with kin size bed</td>
-          <td>$250 per night</td>
+          <th>Type</th>
+          <th>Area, m<sup>2</sup></th>
+          <th>Price per night</th>
         </tr>
       </table>
     </div>
@@ -150,29 +147,33 @@
       <table>
         <tr>
           <td>
-            <label for="name">Full name</label><br>
-            <input type="text" id="name" name="name" class="rounded-input" placeholder="Enter your full name">
+            <label for="input-name">Full name</label><br>
+            <input type="text" id="input-name" name="name" class="rounded-input" placeholder="Enter your full name" required>
+          </td>
+          <td>
+            <label for="input-email">Email</label><br>
+            <input type="email" id="input-email" name="email" class="rounded-input" placeholder="Enter your email" required>
           </td>
         </tr>
         <tr>
           <td>
             <div class="input-container">
-              <label for="checkin">Check-in Date:</label>
-              <input type="date" id="checkin" class="rounded-input" name="checkin">
+              <label for="input-checkin">Check-in Date:</label>
+              <input type="date" id="input-checkin" class="rounded-input" name="checkin" required>
             </div>
           </td>
           <td>
             <div class="input-container">
-              <label for="checkout">Check-out Date:</label>
-              <input type="date" id="checkout" class="rounded-input" name="checkout">
+              <label for="input-checkout">Check-out Date:</label>
+              <input type="date" id="input-checkout" class="rounded-input" name="checkout" required>
             </div>
           </td>
         </tr>
         <tr>
           <td>
             <div class="input-container">
-              <label for="adults">Adults</label>
-              <select id="adults_option" class="rounded-input" name="adults_option">
+              <label for="input-adults-option">Adults</label>
+              <select id="input-adults-option" class="rounded-input" name="adults_option" required>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -183,8 +184,8 @@
           </td>
           <td>
             <div class="input-container">
-              <label for="children">Children</label>
-              <select class="rounded-input" id="children_option" name="children_option">
+              <label for="input-children-option">Children</label>
+              <select class="rounded-input" id="input-children-option" name="children_option">
                 <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -198,8 +199,8 @@
         <tr>
           <td>
             <div class="input-container">
-              <label for="room_type">Room Type</label>
-              <select id="room_option" class="rounded-input" name="room_option">
+              <label for="input-room-option">Room Type</label>
+              <select id="input-room-option" class="rounded-input" name="room_option" required>
                 <option value="Single Room">Single Room</option>
                 <option value="Double Room">Double Room</option>
                 <option value="Suite">Suite</option>
@@ -227,7 +228,7 @@
           </td>
         </tr>
       </table>
-      <button type="submit" class="btn">Submit</button>
+      <button type="submit" class="btn" onclick="bookRoom()">Submit</button>
     </div>
   </section>
   <footer>
