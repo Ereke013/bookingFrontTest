@@ -80,7 +80,7 @@ nav ul li a {
 
 .btn {
   display: inline-block;
-  background: #333;
+  background: #4d8ba9;
   color: #fff;
   padding: 0.5rem 1rem;
   text-decoration: none;
@@ -248,4 +248,18 @@ footer {
   border: none;
   border-radius: 4px;
   transition: background 0.3s ease;
+}
+
+.hotel_content {
+  display: flex;
+  flex-direction: column;
+}
+
+.hotel_content a {
+  margin-top: auto;
+  text-align: center;
+}
+
+.hotel-card {
+  margin-bottom: 20px;
 }
